@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  booking-application-postgres:
+    image: postgres:16.1
+    container_name: booking-application-postgres
+    hostname: booking-application-postgres
+    ports:
+      - 5674:5672
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: postgres
